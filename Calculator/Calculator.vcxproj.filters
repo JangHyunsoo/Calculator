@@ -13,8 +13,20 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="리소스 파일\01.Calculator">
+    <Filter Include="01.Calculator">
       <UniqueIdentifier>{72821dce-cb17-499d-a1bd-83a4d96ef038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Token">
+      <UniqueIdentifier>{f859b2a6-0371-4801-98be-463c5d5b4662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Calculator\01.Input">
+      <UniqueIdentifier>{eac3d867-c06b-4a6e-9c89-9d6bed448e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Token\01.Operator">
+      <UniqueIdentifier>{0bf1340c-6957-44c5-a3d1-937d50b09cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Token\02.Operand">
+      <UniqueIdentifier>{fe167ff4-cac8-41fb-bfd2-6aa43ae50e57}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,12 +34,45 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Calculator.cpp">
-      <Filter>리소스 파일\01.Calculator</Filter>
+      <Filter>01.Calculator</Filter>
+    </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>02.Token</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>01.Calculator\01.Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Operator.cpp">
+      <Filter>02.Token\01.Operator</Filter>
+    </ClCompile>
+    <ClCompile Include="Operand.cpp">
+      <Filter>02.Token\02.Operand</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculator.h">
-      <Filter>리소스 파일\01.Calculator</Filter>
+      <Filter>01.Calculator</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>02.Token</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>01.Calculator\01.Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Mecro.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Operator.h">
+      <Filter>02.Token\01.Operator</Filter>
+    </ClInclude>
+    <ClInclude Include="Operand.h">
+      <Filter>02.Token\02.Operand</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
