@@ -142,9 +142,11 @@
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Operand.cpp" />
     <ClCompile Include="Operator.cpp" />
     <ClCompile Include="Token.cpp" />
+    <ClCompile Include="TokenTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculator.h" />
@@ -152,9 +154,11 @@
     <ClInclude Include="Function.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Mecro.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Operand.h" />
     <ClInclude Include="Operator.h" />
     <ClInclude Include="Token.h" />
+    <ClInclude Include="TokenTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -28,6 +28,12 @@
     <Filter Include="02.Token\02.Operand">
       <UniqueIdentifier>{fe167ff4-cac8-41fb-bfd2-6aa43ae50e57}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.TokenTree">
+      <UniqueIdentifier>{91096f3c-923c-4459-a7a5-a5175754a51e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.TokenTree\01.Node">
+      <UniqueIdentifier>{dad1cfa5-f9da-4066-86b7-7c3fda96879c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -47,6 +53,12 @@
     </ClCompile>
     <ClCompile Include="Operand.cpp">
       <Filter>02.Token\02.Operand</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>03.TokenTree\01.Node</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenTree.cpp">
+      <Filter>03.TokenTree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="Operand.h">
       <Filter>02.Token\02.Operand</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>03.TokenTree\01.Node</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenTree.h">
+      <Filter>03.TokenTree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
