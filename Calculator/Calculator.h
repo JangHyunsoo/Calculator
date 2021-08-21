@@ -11,8 +11,7 @@ private:
 
 private:
 	class CInput* m_pInput;
-	stack<class COperand*> m_stackOperand;
-	list<class COperator*> m_listOperator;
+	list<class CToken*> m_listPostfix;
 
 public:
 	void Run();
@@ -21,5 +20,5 @@ private:
 	void Input();
 	void Render();
 	void Calculation();
-	void TranslateBackwardOperation();
+	void TranslatePostfix();
 };

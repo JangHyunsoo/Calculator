@@ -4,17 +4,17 @@ class COperator :
     public CToken
 {
 public:
-    COperator(string _strOrigin, int _iPriority, function<int(int,int)> _pFunction);
+    COperator(string _strOrigin, int _iPriority, function<double(double, double)> _pFunction);
 
 private:
-    function<int(int, int)> m_pFunction;
+    function<double(double, double)> m_pFunction;
     
 public:
-    void SetFunction(function<int(int, int)> _pFunction) {
+    void SetFunction(function<double(double, double)> _pFunction) {
         m_pFunction = _pFunction;
     }
 
-    int Operate(int iValue1, int iValue2) {
+    double Operate(double iValue1, double iValue2) {
         return m_pFunction(iValue1, iValue2);
     }
 
