@@ -45,6 +45,23 @@ void CCalculator::Render()
 void CCalculator::Calculation()
 {
 	TranslatePostfix();
+	stack<CToken*> Tokens;
+	for (int n = 0; n < m_vecPostfix.size(); n++) {
+		if (m_vecPostfix.front()->IsOperator()) {
+			double b = static_cast<COperand*>(Tokens.top())->GetValue();
+			Tokens.pop();
+			double a = static_cast<COperand*>(Tokens.top())->GetValue();
+			Tokens.pop();
+			double c = static_cast<COperator*>(m_vecPostfix.front())->Operate(a, b);
+			m_vecPostfix.erase(m_vecPostfix.begin());
+			Tokens.push(new COperand(to_string(c),0)); //제대로 생성해서 넣었는가?
+		}
+		else {
+			Tokens.push(m_vecPostfix.front());
+			m_vecPostfix.erase(m_vecPostfix.begin());
+		}
+	}
+	cout << static_cast<COperand*>(Tokens.top())->GetValue() << endl;
 
 }
 

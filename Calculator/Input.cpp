@@ -34,25 +34,25 @@ bool CInput::Input()
 		{
 		case '+':
 			m_vecToken.push_back(new COperator(string(1, cInput), 1, 
-				[](int value1, int value2) { return value1 + value2;})
+				[](double value1, double value2) { return value1 + value2;})
 			);
 			m_iCursor++;
 			break;
 		case '-':
 			m_vecToken.push_back(new COperator(string(1, cInput), 1,
-				[](int value1, int value2) { return value1 - value2; })
+				[](double value1, double value2) { return value1 - value2; })
 			);
 			m_iCursor++;
 			break;
 		case '*':
-			m_vecToken.push_back(new COperator(string(1, cInput), 2,
-				[](int value1, int value2) { return value1 * value2; })
+			m_vecToken.push_back(new COperator(string(1, cInput), 1,
+				[](double value1, double value2) { return value1 * value2; })
 			);
 			m_iCursor++;
 			break;
 		case '/':
-			m_vecToken.push_back(new COperator(string(1, cInput), 2,
-				[](int value1, int value2) { return (int)(value1 / value2);})
+			m_vecToken.push_back(new COperator(string(1, cInput), 1,
+				[](double value1, double value2) { return (double)(value1 / value2);})
 			);
 			m_iCursor++;
 			break;
