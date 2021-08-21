@@ -46,7 +46,7 @@ void CCalculator::Calculation()
 			Tokens.pop();
 			double c = static_cast<COperator*>(m_listPostfix.front())->Operate(a, b);
 			m_listPostfix.pop_front();
-			Tokens.push(new COperand(to_string(c),'0')); //제대로 생성해서 넣었는가?
+			Tokens.push(new COperand(to_string(c),0)); //제대로 생성해서 넣었는가?
 		}
 		else {
 			Tokens.push(m_listPostfix.front());
