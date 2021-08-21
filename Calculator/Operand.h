@@ -7,11 +7,11 @@ public:
     COperand(string _strOrigin = "", int _iPriority = 1);
 
 private:
-    int m_iValue;
+    double m_dValue;
 
 public:
-    int GetValue() {
-        return m_iValue;
+    double GetValue() {
+        return m_dValue;
     }
 
 public:

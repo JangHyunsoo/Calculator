@@ -2,7 +2,7 @@
 
 COperand::COperand(string _strOrigin, int _iPriority) : CToken(_strOrigin, _iPriority)
 {
-	m_iValue = stoi(_strOrigin);
+	m_dValue = stod(_strOrigin);
 }
 
 bool COperand::IsOperator()
@@ -12,7 +12,7 @@ bool COperand::IsOperator()
 
 void COperand::Append(char _cValue)
 {
-	if (m_strOrigin.size() >= 10) return;
+	if (m_strOrigin.size() >= 14) return;
 	m_strOrigin += _cValue;
-	m_iValue = stoi(m_strOrigin);
+	m_dValue = stod(m_strOrigin);
 }

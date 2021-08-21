@@ -14,5 +14,5 @@ private:
 public:
 	void Input();
 	void Render();
-};
-
+}; 
+// ÁßÀ§
