@@ -60,7 +60,7 @@ bool CInput::Input()
 		case '{':
 		case '[':
 			m_vecToken.push_back(new COperator(string(1, '('), 1,
-				[](int value1, int value2) { return NULL; })
+				[](double value1, double value2) { return NULL; })
 			);
 			m_iCursor++;
 			break;
@@ -68,7 +68,7 @@ bool CInput::Input()
 		case '}':
 		case ']':
 			m_vecToken.push_back(new COperator(string(1, ')'), 1,
-				[](int value1, int value2) { return NULL; })
+				[](double value1, double value2) { return NULL; })
 			);
 			m_iCursor++;
 			break;
