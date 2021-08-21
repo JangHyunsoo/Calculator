@@ -15,6 +15,9 @@ public:
 	string GetOrigin() {
 		return m_strOrigin;
 	}
+	int GetPriority() {
+		return m_iPriority;
+	}
 
 public:
 	virtual bool IsOperator() = 0;

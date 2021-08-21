@@ -11,15 +11,14 @@ private:
 
 private:
 	class CInput* m_pInput;
-	stack<class COperand*> m_stackOperand;
-	list<class COperator*> m_listOperator;
+	vector<class CToken*> m_vecPostfix;
 
 public:
 	void Run();
 
 private:
-	void Input();
+	bool Input();
 	void Render();
 	void Calculation();
-	void TranslateBackwardOperation();
+	void TranslatePostfix();
 };

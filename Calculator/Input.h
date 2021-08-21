@@ -12,7 +12,12 @@ private:
 	int m_iCursor;
 
 public:
-	void Input();
+	vector<class CToken*> GetToken() {
+		return m_vecToken;
+	}
+
+public:
+	bool Input();
 	void Render();
 }; 
 // ÁßÀ§
