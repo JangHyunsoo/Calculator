@@ -16,12 +16,14 @@ void CInput::Input()
 {
 	char cInput = _getch();
 
-	if (isdigit(cInput)) {
+	if (isdigit(cInput) || cInput == '.') {
 		// operand
 		if (!m_vecToken[m_iCursor]->IsOperator()) {
 			((COperand*)m_vecToken[m_iCursor])->Append(cInput);
 		}
 		else {
+			if(cInput == '.')
+				m_vecToken.push_back(new COperand(string(1, '0')));
 			m_vecToken.push_back(new COperand(string(1, cInput)));
 			m_iCursor++;
 		}

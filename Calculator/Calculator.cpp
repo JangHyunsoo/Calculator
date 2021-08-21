@@ -35,4 +35,10 @@ void CCalculator::Render()
 
 void CCalculator::Calculation()
 {
+
+
+}
+
+void CCalculator::TranslateBackwardOperation()
+{
 }
