@@ -16,3 +16,5 @@ void COperand::Append(char _cValue)
 	m_strOrigin += _cValue;
 	m_dValue = stod(m_strOrigin);
 }
+
+///test//
